@@ -1,0 +1,1 @@
+// JavaScript für dynamische Datenintegration folgt später

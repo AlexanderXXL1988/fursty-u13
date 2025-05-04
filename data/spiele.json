@@ -1,0 +1,28 @@
+{
+    "spiele": [ 
+        {
+        "datum": "2025-05-11",
+        "uhrzeit": "11:00",
+        "gegner": "Erding Bulls",
+        "ort": "Heimspiel"
+      }
+    ],
+    "ergebnisse": [
+        {
+            "datum": "2025-04-27",
+            "gegner": "München Rangers",
+            "ergebnis": "21:14",
+            "ort": "Auswärtsspiel"
+          }
+    ],
+    "tabelle": [
+        {
+            "team": "Fursty Razorbacks U13",
+            "spiele": 2,
+            "siege": 2,
+            "niederlagen": 0,
+            "punkte": 4,
+            "platz": 1
+          }
+    ]
+}
