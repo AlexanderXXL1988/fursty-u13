@@ -12,12 +12,16 @@
       <img src="images/logo.jpg" alt="Razorbacks Logo" class="logo">
     </div>
     <h1>U13 Fursty Razorbacks</h1>
-    <nav>
-      <ul>
-        <li><a href="u13-flag-field-2025.html">U13 Flag Field (5er) 2025</a></li>
-        <li><a href="u13-flag-halle-2025.html">U13 Flag Halle (5er) 2025</a></li>
+    <nav class="navbar">
+      <div class="logo">U13 Razorbacks</div>
+      <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Startseite</a></li>
+        <li><a href="u13-flag-field.html">U13 Flag Field</a></li>
+        <li><a href="u13-flag-halle.html">U13 Flag Halle</a></li>
       </ul>
     </nav>
+    
   </header>
 
   <main>
@@ -30,5 +34,13 @@
   <footer>
     <p>Inoffizieller Webauftritt der U13 Fursty Razorbacks | erstellt von Alexander Hofmann</p>
   </footer>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
+  
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>  
 </body>
 </html>

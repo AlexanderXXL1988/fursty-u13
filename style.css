@@ -173,8 +173,86 @@ ul {
   }
   
   .logo {
-    width: 80px;  /* Passe die Größe nach Bedarf an */
+    width: 100%;  /* Passe die Größe nach Bedarf an */
     height: auto;
     margin-right: 20px;
   }
   
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+
+  @media (max-width: 768px) {
+    /* Anpassungen für Tablets */
+  }
+  
+  @media (max-width: 480px) {
+    /* Anpassungen für Smartphones */
+  }
+  
+  .table-responsive {
+    overflow-x: auto;
+  }
+  
+  /* Hamburger Menü Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #8b0000;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.5em;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: #8b0000;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 10px 0;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+}
