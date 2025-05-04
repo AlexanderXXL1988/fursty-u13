@@ -164,4 +164,17 @@ ul {
   tbody tr:hover {
     background-color: #444444;
   }
+  /* Logo-Stile */
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  .logo {
+    width: 632px;  /* Passe die Größe nach Bedarf an */
+    height: auto;
+    margin-right: 20px;
+  }
   
