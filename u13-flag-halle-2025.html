@@ -173,6 +173,19 @@
         </tbody>
       </table>
     </section>
+
+    <section id="upload">
+        <p id="last-updated" style="text-align: center; font-size: 0.9em; color: #888;"></p>
+
+        <script>
+        const lastUpdated = new Date();
+        const optionsDate = { year: 'numeric', month: 'long', day: 'numeric' };
+        const optionsTime = { hour: '2-digit', minute: '2-digit' };
+
+        document.getElementById('last-updated').textContent =
+        `Diese Seite wurde zuletzt aktualisiert am ${lastUpdated.toLocaleDateString('de-DE', optionsDate)} um ${lastUpdated.toLocaleTimeString('de-DE', optionsTime)} Uhr.`;
+        </script>
+    </section>
   </main>
 
   <footer>
