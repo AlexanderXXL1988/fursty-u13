@@ -72,7 +72,7 @@
     </section>
 
     <section id="tabelle">
-      <h2>Tabellenstand</h2>
+      <h2>Tabellenstand Gruppenphase</h2>
       <table>
         <thead>
           <tr>
@@ -135,6 +135,18 @@
           <!-- Weitere Tabellenreihen hier hinzufügen -->
         </tbody>
       </table>
+    </section>
+
+    <section id="upload">
+        <p id="last-updated" style="text-align: center; font-size: 0.9em; color: #888;"></p>
+
+<script>
+  const lastUpdated = new Date();
+  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  document.getElementById('last-updated').textContent = 
+    `Diese Seite wurde zuletzt aktualisiert am ${lastUpdated.toLocaleDateString('de-DE', options)}.`;
+</script>
+
     </section>
   </main>
 
